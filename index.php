@@ -6,6 +6,4 @@ $ROOT_DIR = __DIR__;
 
 require $ROOT_DIR.'/core/require.php';
 
-use Core\Router;
-
-Router::run();
+Core\Router::run();
