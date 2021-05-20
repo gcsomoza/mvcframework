@@ -6,6 +6,7 @@
         <td><a href="<?php url("foo/{$foo->id}") ?>"><?php echo $foo->id ?></a></td>
         <td><?php echo $foo->name ?></td>
         <td><?php echo $foo->address ?></td>
+        <td><a href="<?php url("foo/delete/{$foo->id}") ?>">Delete</a></td>
       </tr>
     <?php endforeach; ?>
   </table>

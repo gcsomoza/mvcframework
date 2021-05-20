@@ -74,4 +74,11 @@ class Foo {
       $db->close();
     }
   }
+
+  public function delete() {
+    $db = new Database();
+    $db->open();
+    $db->run(sprintf("DELETE FROM foo WHERE id = %d", $db->esc($this->id)));
+    $db->close();
+  }
 }

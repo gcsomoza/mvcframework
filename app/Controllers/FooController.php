@@ -32,4 +32,12 @@ class FooController {
     
     redirect("foo/{$id}");
   }
+
+  public static function delete($id) {
+    $foo = new Foo();
+    $foo->id = $id;
+    $foo->delete();
+
+    redirect("foo");
+  }
 }
